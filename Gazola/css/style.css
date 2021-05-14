@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: #8d99ae;
+    --secondary-color: #d90429;
+    --terciary-color: #ef233c;
+    --dark-color: #2b2d42;
+    --light-color: #edf2f4;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--dark-color);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 10em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+h1, h2, h3, h4, h5, p {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: var(--light-color);
+}
+
+
+/* Showcase */
+.showcase {
+    max-width: 900px;
+    margin: 300px 0px;
+}
+
+.showcase h4, a {
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 0px;
+}
+
+.showcase h1 {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.profile-icons a {
+    margin: 20px 50px 5px 50px;
+    color: var(--terciary-color);
+}
+
+.profile-icons a:hover {
+    color: var(--secondary-color);
+}
+
+.pfp img {
+    border: 8px solid #4a4e69;
+    border-radius: 100px;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.showcase .container {
+    display: inline-flex;
+    justify-items: center;
+    align-content: baseline;
+}
+
+.showcase-text .flex {
+    display: flex;
+    justify-items: center;
+    width: fit-content;
+}
+ 
+.showcase-text .red {
+    color: var(--terciary-color);
+    flex-shrink: auto;
+    width: auto;
+    align-self: auto;
+}
+
+.showcase-text {
+    margin-left: 50px;
+}
+
+.showcase-text a > *:first-child {
+    text-decoration: underline;
+}
+
+/* Experience */
+.experience .container {
+    margin: 150px 0;
+}
+
+.experience h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.experience {
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.experience .exp-inst {
+    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.exp-item {
+    margin-bottom: 40px;
+}
+.experience .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.experience .exp-title {
+    margin-top: 5px;
+    font-weight: bold;
+    color: var(--terciary-color);
+}
