@@ -41,6 +41,45 @@ h1, h2, h3, h4, h5, p {
 }
 
 
+/* Navbar */
+.sidenav {
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #0a0d0f;
+    padding-top: 25vh; /* 25% of vertical height */
+    height: 100%;
+    width: 250px;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--light-color);
+    display: block;
+    background-color: #0a0d0f;
+    margin: 0;
+}
+
+.sidenav a:hover {
+    color: var(--primary-color);
+}
+
+.pfp {
+    background-color: #0a0d0f;
+    margin: 0px 0px 30px 0px;
+}
+
+.pfp img {
+    border: 8px solid #4a4e69;
+    border-radius: 75px;
+    width: 150px;
+}
+
 /* Showcase */
 .showcase {
     max-width: 900px;
@@ -56,6 +95,7 @@ h1, h2, h3, h4, h5, p {
 .showcase h1 {
     font-weight: bolder;
     font-size: 60px;
+    margin: 0px;
 }
 
 .profile-icons a {
@@ -67,17 +107,15 @@ h1, h2, h3, h4, h5, p {
     color: var(--secondary-color);
 }
 
-.pfp img {
-    border: 8px solid #4a4e69;
-    border-radius: 100px;
-    width: 200px;
-    margin-top: 50px;
-}
-
 .showcase .container {
     display: inline-flex;
     justify-items: center;
-    align-content: baseline;
+    align-content: center;
+}
+
+.mail a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
 }
 
 .showcase-text .flex {
@@ -95,10 +133,6 @@ h1, h2, h3, h4, h5, p {
 
 .showcase-text {
     margin-left: 50px;
-}
-
-.showcase-text a > *:first-child {
-    text-decoration: underline;
 }
 
 /* Experience */
