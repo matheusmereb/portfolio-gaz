@@ -87,7 +87,7 @@ p {
 /* Showcase */
 .showcase {
   max-width: 900px;
-  margin: 300px 0px;
+  margin: 30vh 0;
 }
 
 .showcase h4,
@@ -123,11 +123,11 @@ a {
   color: var(--primary-color);
 }
 
-.showcase-text .flex {
+/* .showcase-text .flex {
   display: flex;
   justify-items: center;
   width: fit-content;
-}
+} */
 
 .showcase-text .red {
   color: var(--terciary-color);
