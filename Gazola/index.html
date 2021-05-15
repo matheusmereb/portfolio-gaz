@@ -6,31 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
     <title>Gabriel Gazola Milan</title>
 </head>
 <body>
 
+    <!-- Mail button -->
+    <div class="btn-holder">
+        <a href="mailto:gabriel.gazola@poli.ufrj.br" class="mail-btn fas fa-inbox fa-3x"></a>
+    </div>
+
     <!-- Sidebar -->
     <div class="sidenav center">
-        <div class="pfp">
+       <!--  <div class="pfp">
             <img src="images/pfp.jpg" alt="Gabriel">
-        </div>
+        </div> -->
         <nav>
             <a href="#">ABOUT</a>
-            <a href="#experience">EXPERIENCE</a>
+            <a href="#experience" id="experience-btn">EXPERIENCE</a>
             <a href="#">PROJECTS</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#">ACHIEVEMENTS</a>
         </nav>
     </div>
 
 
     <!-- Showcase --> 
     <section class="showcase" id="about">
-        <div class="container grid">
+        <div class="container-showcase grid">
+            <div class="pfp">
+                <img src="images/pfp.jpg" alt="Gabriel">
+            </div>
             <div class="showcase-text">
                 <h1 class="flex">GABRIEL GAZOLA <span class="red">&nbsp;MILAN</span></h1>
-                <h3>Electronics and Computer Engineering Student</h3>
-                <h4>Federal University of Rio de Janeiro — UFRJ — Brazil</h4>
-                <h4>Apr 2016 to the moment —</h4>
+                <div class="showcase-info">
+                    <h3>Electronics and Computer Engineering Student</h3>
+                    <h4>Federal University of Rio de Janeiro — UFRJ — Brazil</h4>
+                    <h4>Apr 2016 to the moment —</h4>
+                </div>    
                 <a href="mailto:gabriel.gazola@poli.ufrj.br" class="mail">gabriel.gazola@poli.ufrj.br</a>
                 <div class="profile-icons">
                     <a href="https://github.com/gabriel-milan" class="fab fa-github fa-2x" target="_blank"></a>
@@ -43,7 +56,7 @@
 
     <!-- Experience -->
     <section class="experience" id="experience">
-        <div class="container">
+        <div class="container-exp">
             <h1>ACADEMIC & PROFESSIONAL EXPERIENCE</h1>
             <div class="exp-item">
                 <div class="details">
@@ -97,5 +110,75 @@
 
         </div>
     </section> -->
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="container-skills grid">
+            <h1>SKILLS</h1>
+            <div class="skill-list">
+                    <li class="skill-icons">
+                        <i class="devicon-python-plain"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-docker-plain-wordmark"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-c-line"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-cplusplus-line"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-github-original"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-git-plain"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-rust-plain"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-mysql-plain-wordmark"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-bash-plain"></i>
+                    </li>
+                    <li class="skill-icons"></li>
+                    <li class="skill-icons">
+                        <i class="devicon-kubernetes-plain"></i>
+                    </li>
+                    <li class="skill-icons"></li>
+                    <li class="skill-icons">
+                        <i class="devicon-flutter-plain"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-html5-plain-wordmark"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-css3-plain-wordmark"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-javascript-plain"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-vuejs-plain"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-elixir-plain-wordmark"></i>
+                    </li>
+                    <li class="skill-icons">
+                        <i class="devicon-go-plain"></i>
+                    </li>
+                    <h3>Python, Docker</h3>
+                    <h3>C/C++, Git, TensorFlow</h3>
+                    <h3>Rust, SQL, Bash, Assembly</h3>
+                    <h3>Kubernetes, Ansible, Flutter</h3>
+                    <h3>HTML, CSS, JS, VueJS</h3>
+                    <h3>Elixir, Go</h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 </html>

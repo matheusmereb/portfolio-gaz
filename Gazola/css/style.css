@@ -15,21 +15,26 @@
   background-color: var(--dark-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: #333;
   line-height: 1.6;
   height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-blend-mode: soft-light;
   display: grid;
   align-items: center;
   justify-content: center;
   flex: 0 0 10em;
+  margin: 0% 10%;
 }
 
 a {
-  text-decoration: none;
   color: var(--light-color);
 }
 
@@ -45,6 +50,19 @@ p {
   color: var(--light-color);
 }
 
+.btn-holder a {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  color: var(--terciary-color);
+  text-decoration: none;
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Navbar */
 .sidenav {
   position: fixed;
@@ -52,9 +70,9 @@ p {
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #0a0d0f;
-  padding-top: 25vh; /* 25% of vertical height */
+  padding-top: 35vh; /* 25% of vertical height */
   height: 100%;
-  width: 250px;
+  width: 220px;
   overflow-x: hidden;
   text-align: center;
 }
@@ -73,21 +91,10 @@ p {
   color: var(--primary-color);
 }
 
-.pfp {
-  background-color: #0a0d0f;
-  margin: 0px 0px 30px 0px;
-}
-
-.pfp img {
-  border: 8px solid #4a4e69;
-  border-radius: 75px;
-  width: 150px;
-}
-
 /* Showcase */
 .showcase {
-  max-width: 900px;
-  margin: 30vh 0;
+  margin: 35% 0;
+  left: 220px;
 }
 
 .showcase h4,
@@ -104,15 +111,16 @@ a {
 }
 
 .profile-icons a {
-  margin: 20px 50px 5px 50px;
+  margin: 20px 80px 5px 80px;
   color: var(--terciary-color);
+  text-decoration: none;
 }
 
 .profile-icons a:hover {
   color: var(--secondary-color);
 }
 
-.showcase .container {
+.container-showcase {
   display: inline-flex;
   justify-items: center;
   align-content: center;
@@ -123,11 +131,17 @@ a {
   color: var(--primary-color);
 }
 
-/* .showcase-text .flex {
+.pfp {
+  margin: 0px 0px 50px 0px;
   display: flex;
-  justify-items: center;
-  width: fit-content;
-} */
+  align-self: center;
+}
+
+.pfp img {
+  border: 8px solid #4a4e69;
+  border-radius: 100px;
+  width: 200px;
+}
 
 .showcase-text .red {
   color: var(--terciary-color);
@@ -140,10 +154,18 @@ a {
   margin-left: 50px;
 }
 
+.showcase-info {
+  margin: 0px 0px 10px 0px;
+}
+
 /* Experience */
-.experience .container {
-  margin: 120px 0;
+.container-exp {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-left: 5%;
+  margin-right: 5%;
   height: 100vh;
+  left: 220px;
 }
 
 .experience h1 {
@@ -153,8 +175,8 @@ a {
 }
 
 .experience {
-  max-width: 800px;
   margin-top: 50px;
+  max-width: 85vw;
 }
 
 .experience .exp-inst {
@@ -185,4 +207,39 @@ a {
 
 .exp-date {
   font-weight: bold;
+}
+
+/* Skills */
+.container-skills {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100vh;
+  left: 220px;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+#skills h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+#skills li {
+  display: inline;
+  align-items: center;
+  margin: 0px auto 0px auto;
+}
+
+.skill-icons {
+  color: var(--light-color);
+  list-style-type: none;
+  font-size: 3rem;
+  margin: 5px 10px;
+}
+
+.skill-icons i:hover {
+  color: var(--primary-color);
 }
