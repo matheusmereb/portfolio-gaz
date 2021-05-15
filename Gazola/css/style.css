@@ -216,12 +216,12 @@ a {
 /* Skills */
 .tooltiptext {
   visibility: hidden;
-  width: 80px;
+  width: 90px;
   background-color: #0a0d0f;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 5px 5px;
   position: absolute;
   z-index: 1;
   bottom: 100%;
