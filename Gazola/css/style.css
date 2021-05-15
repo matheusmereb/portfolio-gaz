@@ -214,6 +214,38 @@ a {
 }
 
 /* Skills */
+.tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: #0a0d0f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -50px;
+  font-size: medium;
+  margin-bottom: 5px;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
 .container-skills {
   margin-top: 250px;
   margin-bottom: 250px;
@@ -222,7 +254,7 @@ a {
   height: 100vh;
   left: 220px;
   max-height: 100vh;
-  max-width: 1100px;
+  max-width: 800px;
   text-align: center;
 }
 
