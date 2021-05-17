@@ -1,0 +1,85 @@
+/* Titles */
+.title {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+/* Separators */
+.separator {
+    height: 300px;
+}
+
+/* Project Cards */
+.project-card
+{
+  height:26em;
+  width:30em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+/*   -webkit-box-shadow:  5px 5px 27px #e1e1e3, -5px -5px 27px #ffffff;
+  box-shadow:  5px 5px 27px #e1e1e3, -5px -5px 27px #ffffff; */
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+}
+
+.project-img
+{
+  height:18em;
+  width:30em;
+  max-width: 30em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-image: url(https://www.pocketanatomy.com/wp-content/uploads/2014/09/web-project-header.jpg);
+}
+
+.project-info
+{
+  background-color: var(--light-color);
+  height:8em;
+  width:30em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+.project-info p,
+.project-info h3 {
+    background-color: var(--light-color);
+    color: black;
+}
+
+.project-info h3 {
+    font-weight: bolder;
+}
+
+.project-card:hover .project-info
+{
+  height:7em;
+  padding:0.5px 1em;
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
+}
+.project-card:hover .project-img
+{
+  height:23em;
+}
