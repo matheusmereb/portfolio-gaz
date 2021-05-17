@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
     <title>Gabriel Gazola Milan</title>
@@ -17,23 +18,22 @@
     </div>
 
     <!-- Sidebar -->
-    <div class="sidenav center">
-       <!--  <div class="pfp">
-            <img src="images/pfp.jpg" alt="Gabriel">
-        </div> -->
-        <nav>
-            <a href="#">ABOUT</a>
-            <a href="#experience" id="experience-btn">EXPERIENCE</a>
-            <a href="#">PROJECTS</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#">ACHIEVEMENTS</a>
-        </nav>
+    <div class="sidenav">
+        <div class="center">
+            <nav>
+                <a href="#">ABOUT</a>
+                <a href="#experience" id="experience-btn">EXPERIENCE</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#">ACHIEVEMENTS</a>
+            </nav>
+        </div>
     </div>
 
 
     <!-- Showcase --> 
-    <section class="showcase" id="about">
-        <div class="container-showcase grid">
+    <section class="showcase section" id="about">
+        <div class="container-showcase container">
             <div class="pfp">
                 <img src="images/pfp.jpg" alt="Gabriel">
             </div>
@@ -55,8 +55,8 @@
     </section>
 
     <!-- Experience -->
-    <section class="experience" id="experience">
-        <div class="container-exp">
+    <section class="experience section" id="experience">
+        <div class="container-exp container">
             <h1>ACADEMIC & PROFESSIONAL EXPERIENCE</h1>
             <div class="exp-item">
                 <div class="details">
@@ -104,16 +104,24 @@
         </div>
     </section>
 
-    <!-- <section class="projects">
-        <div class="container">
+    <section class="projects section" id="projects">
+        <div class="container-projects container">
             <h1>PROJECTS</h1>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="" alt="">
+                    </div>
 
+                    <div class="project-info">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab consequatur accusantium animi nostrum veniam illum, tempora laborum voluptatum quibusdam accusamus iusto error expedita, fuga ducimus eius dolores quas. Modi, quae!</p>
+                    </div>
+                </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Skills -->
-    <section class="skills" id="skills">
-        <div class="container-skills grid">
+    <section class="skills section" id="skills">
+        <div class="container-skills container">
             <h1>SKILLS</h1>
             <div class="skill-list">
                 <li class="skill-icons tooltip">

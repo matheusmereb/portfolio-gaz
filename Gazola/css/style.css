@@ -23,15 +23,18 @@ body {
   font-family: "Lato", sans-serif;
   color: #333;
   line-height: 1.6;
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
   background-blend-mode: soft-light;
-  display: grid;
   align-items: center;
   justify-content: center;
   flex: 0 0 10em;
   margin: 0% 10%;
+}
+
+#section {
+  min-height: 100vh;
+  position: relative;
+  left: 220px;
 }
 
 a {
@@ -54,12 +57,16 @@ p {
   position: fixed;
   right: 40px;
   bottom: 40px;
-  color: var(--terciary-color);
+  color: var(--light-color);
   text-decoration: none;
+  padding: 20px 18px;
+  border-radius: 200px;
+  background: #da062d;
 }
 
 .btn-holder a:hover {
-  color: var(--secondary-color);
+  color: #dbd9d9;
+  background: var(--secondary-color);
 }
 
 .btn-holder {
@@ -97,8 +104,9 @@ p {
 
 /* Showcase */
 .showcase {
-  margin: 35% 0;
+  min-height: 100vh;
   left: 220px;
+  padding: 30% 10%;
 }
 
 .showcase h4,
