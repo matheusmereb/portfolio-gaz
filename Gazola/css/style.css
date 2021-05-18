@@ -62,7 +62,7 @@ h5 {
   color: var(--light-color);
   text-decoration: none;
   padding: 20px 18px;
-  border-radius: 200px;
+  border-radius: 100px;
   background: #da062d;
   z-index: 10;
 }

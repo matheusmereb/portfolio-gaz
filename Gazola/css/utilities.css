@@ -1,3 +1,17 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 /* Titles */
 .title {
     font-size: 40px;
@@ -115,21 +129,11 @@
   padding: 0;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+.achiev-card span {
+  font-weight: bold;
+  position: relative;
+  left: 80%;
 }
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-
 
 /* Resizes */
 @media screen and (max-width: 600px) {
