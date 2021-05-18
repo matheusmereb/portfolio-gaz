@@ -166,7 +166,7 @@ a {
   width: 200px;
 }
 
-.showcase-text .red {
+.red {
   color: var(--terciary-color);
   flex-shrink: auto;
   width: auto;
@@ -255,7 +255,10 @@ a {
 .tooltip {
   position: relative;
   display: inline-block;
-  /* border-bottom: 1px dotted black; */
+}
+
+.skill-list {
+  padding-left: 20px;
 }
 
 .skill-list li {
