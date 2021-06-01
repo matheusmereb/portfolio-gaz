@@ -9,15 +9,20 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: var(--dark-color);
   -webkit-font-smoothing: antialiased;
 }
 
 .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -29,7 +34,12 @@ body {
   font-family: "Lato", sans-serif;
   color: var(--light-color);
   line-height: 1.6;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 0% 10%;
 }
@@ -73,7 +83,11 @@ h5 {
 }
 
 .btn-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -134,8 +148,12 @@ a {
 }
 
 .container-showcase {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-grid-column-align: center;
   justify-items: center;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -156,7 +174,10 @@ a {
 
 .pfp {
   margin: 0px 0px 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
@@ -168,8 +189,10 @@ a {
 
 .red {
   color: var(--terciary-color);
+  -ms-flex-negative: auto;
   flex-shrink: auto;
   width: auto;
+  -ms-flex-item-align: auto;
   align-self: auto;
 }
 
@@ -208,8 +231,14 @@ a {
 }
 
 .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -246,12 +275,15 @@ a {
 
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .tooltip {
@@ -271,6 +303,7 @@ a {
 .skill-icons {
   color: var(--light-color);
   list-style-type: none;
+  font-size: 48px;
   font-size: 3rem;
   margin: 5px 15px;
   padding-right: 5px;
