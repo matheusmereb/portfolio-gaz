@@ -68,13 +68,13 @@ h5 {
 }
 
 .btn-holder a:hover {
-color: #dbd9d9;
-background: var(--secondary-color);
+  color: #dbd9d9;
+  background: var(--secondary-color);
 }
 
 .btn-holder {
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Navbar */
@@ -183,8 +183,6 @@ a {
 
 /* Projects */
 
-
-
 /* Experience */
 .experience .exp-inst {
   font-weight: bolder;
@@ -192,7 +190,7 @@ a {
   margin-top: 10px;
 }
 
-.experience .title{
+.experience .title {
   margin-bottom: 15px;
 }
 
@@ -202,7 +200,11 @@ a {
 }
 
 .experience p {
-  margin: 5px 0;
+  margin: 2px 0;
+}
+
+.top {
+  margin: 5px 0 2px 0;
 }
 
 .details {
