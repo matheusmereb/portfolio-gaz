@@ -275,6 +275,7 @@ a {
 
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
@@ -283,6 +284,7 @@ a {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 0.8;
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
